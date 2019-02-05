@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<title>Nguyễn Tấn Chính</title>
+	<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<style media="screen">
+	.message_container {
+		max-width: 1000px;
+		width: 90%;
+		height: 100%;
+		margin: 0 auto;
+		padding-bottom: 45px;
+	  }
+
+	  span {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15px;
+	  }
+	  
+	  .message_screen {
+		padding: 15px 10px;
+	  }
+	  
+	  .bot_item {
+		margin-left: 35px;
+	  }
+	  
+	  audio{
+		width: 250px;
+	  }
+	  
+	  video{
+		margin-top:2px;
+		margin-bottom:2px;
+		max-width: 450px;
+	  }
+	  
+	  img {
+		margin-top:2px;
+		margin-bottom:2px;
+		width: 75%;
+		max-width: 450px;
+	  }
+	  
+	  .message__list {
+		padding: 0;
+		margin: 10px 0px 10px 0px;
+		list-style: none;
+		width: 100%;
+		position: relative;
+	  }
+	  .message__list:after {
+		content: '';
+		display: table;
+		clear: both;
+	  }
+	  
+	  .message__item {
+		max-width: 50%;
+		clear: both;
+	  }
+	  
+	  .message__item--bot {
+		float: left;
+	  }
+	  .message__item--bot:first-of-type .message {
+		border-top-left-radius: 20px;
+	  }
+	  .message__item--bot:last-of-type .message {
+		border-bottom-left-radius: 20px;
+	  }
+	  
+	  .message__item--user {
+		float: right;
+		text-align: right;
+	  }
+	  .message__item--user:first-of-type .message {
+		border-top-right-radius: 20px;
+	  }
+	  .message__item--user:last-of-type .message {
+		border-bottom-right-radius: 20px;
+	  }
+	  
+	  .message {
+		padding: 8px 15px;
+		margin-top:2px;
+		margin-bottom:2px;
+		display: inline-block;
+		text-align: left;
+		max-width: 440px;
+	  }
+	  
+	  .message--bot {
+		background-color: #eee;
+		border-radius: 3px 20px 20px 3px;
+		margin-left: 35px;
+	  }
+	  
+	  .message--user {
+		background-color: #0baaff;
+		color: #fff;
+		border-radius: 20px 3px 3px 20px;
+	  }
+	  
+	  .bot__image {
+		width: 28px;
+		height: 28px;
+		position: absolute;
+		bottom: 3px;
+		left: 0;
+		border-radius: 20px;
+	  }
+	  
+	  .sticker{
+		max-width: 180px;
+	  }
+	  
+	</style>
+	</head>
+	<body>
+	<div class="message_container">
+		<div class="message_screen">
+			<div class="message__list">
+						<div class="message__item message__item--user">
+						<a href="null" target="_blank">
+						<img src="https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/uC8WgCgZBjI.png" alt="" title="Mon Jan 07 2019 18:15:21 GMT+0700 (Giờ Đông Dương)">
+						</a>
+					  	</div><div class="message__item message__item--user">
+						<span class="message message--user" title="Mon Jan 07 2019 18:15:21 GMT+0700 (Giờ Đông Dương)">Bạn đã vẫy tay chào Chính!</span>
+						</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 18:15:25 GMT+0700 (Giờ Đông Dương)">Hey bro</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 18:27:16 GMT+0700 (Giờ Đông Dương)">hey</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 18:27:17 GMT+0700 (Giờ Đông Dương)">Giờ đây, các bạn có thể gọi cho nhau, xem những thông tin như Trạng thái hoạt động và khi bạn đã đọc tin nhắn.</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/47196004_2150116928374413_7862402226235375616_n.png?_nc_cat=1&_nc_oc=AQm7ZoSs5MQhyveo8adSUYuKB6SfUEVZ_n-Y1FoNca30kv49K3K1XT9B0v-Q2rMENRc&_nc_ht=scontent.fdad2-1.fna&oh=c32c249dae7bf0281d4333ba143524cb&oe=5CEC488A" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/47196004_2150116928374413_7862402226235375616_n.png?_nc_cat=1&_nc_oc=AQm7ZoSs5MQhyveo8adSUYuKB6SfUEVZ_n-Y1FoNca30kv49K3K1XT9B0v-Q2rMENRc&_nc_ht=scontent.fdad2-1.fna&oh=c32c249dae7bf0281d4333ba143524cb&oe=5CEC488A" alt="" title="Mon Jan 07 2019 22:50:53 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:51:05 GMT+0700 (Giờ Đông Dương)">Bao giờ b đi đc</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 22:55:59 GMT+0700 (Giờ Đông Dương)">thứ 4-6 á bạn</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:56:12 GMT+0700 (Giờ Đông Dương)">Thứ 4 đi lm nha</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 22:56:18 GMT+0700 (Giờ Đông Dương)">ok ok</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 22:56:23 GMT+0700 (Giờ Đông Dương)">một ngày thôi hả</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:56:36 GMT+0700 (Giờ Đông Dương)">Đúng r b</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 22:56:46 GMT+0700 (Giờ Đông Dương)">khoảng mấy ngày có tiền bạn</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 22:56:50 GMT+0700 (Giờ Đông Dương)">mình đang cần gấp</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:56:51 GMT+0700 (Giờ Đông Dương)">À</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:56:59 GMT+0700 (Giờ Đông Dương)">Tối thiểu 2 ngày chứ</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:57:06 GMT+0700 (Giờ Đông Dương)">Ngày t4 tuần ni b đi làm</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:57:19 GMT+0700 (Giờ Đông Dương)">Tuần sau t4 hay t5,6 gì đó đi lấy.</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:57:25 GMT+0700 (Giờ Đông Dương)">T2 kế tiếp có tiền</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 22:57:59 GMT+0700 (Giờ Đông Dương)">chớ ko phải lấy ko có tiền liền hả</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:58:49 GMT+0700 (Giờ Đông Dương)">Ko b. Bên mình phải k.tra thẻ xem có sai gì ko nữa á</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 22:59:11 GMT+0700 (Giờ Đông Dương)">ko đưa trước vài trăm hả bạn</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 22:59:21 GMT+0700 (Giờ Đông Dương)">thấy làm xong thẻ đưa nữa tiền trước mà</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 22:59:29 GMT+0700 (Giờ Đông Dương)">Nếu có thì mình ứng trước 3-500</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 22:59:58 GMT+0700 (Giờ Đông Dương)">ok thứ 4 đi làm cho mình ứng trước 500 nha. mình đang cần tiền gấp</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 23:00:13 GMT+0700 (Giờ Đông Dương)">Ok nếu b làm ổn hết trong ngày</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 07 2019 23:00:23 GMT+0700 (Giờ Đông Dương)">ok ok v thứ 4 đi</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 07 2019 23:00:30 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 18:10:50 GMT+0700 (Giờ Đông Dương)">ê bạn</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 18:11:00 GMT+0700 (Giờ Đông Dương)">mình có kèo này giới thiệu</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 18:16:46 GMT+0700 (Giờ Đông Dương)">còn nhận kèo thì nói mình nha</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 18:17:10 GMT+0700 (Giờ Đông Dương)">Tối nc nha</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 18:17:17 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:20:47 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:20:53 GMT+0700 (Giờ Đông Dương)">Có nói bounty chưa</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:21:11 GMT+0700 (Giờ Đông Dương)">là cái gì</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:21:21 GMT+0700 (Giờ Đông Dương)">Tiền hoa hồng</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:28:48 GMT+0700 (Giờ Đông Dương)">Bạn đã gọi Chính.</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:29:10 GMT+0700 (Giờ Đông Dương)">Ông gửi ảnh chụp cmnd 2 mặt tui lấy form với</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:29:12 GMT+0700 (Giờ Đông Dương)">0388746410 số tui đó nha</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:29:16 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div></div><div class="message__list">
+							<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+							<div class="message__item message__item--bot">
+							<a class="bot_item" href="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/49650748_541620912978732_6872672496575840256_n.png?_nc_cat=101&_nc_oc=AQkCGgaGBfzXfrOCdW9o6zxOM2gOgRzqR-mdk86hLVEaTwr6m2lbh-xdX3k8hWcqQvI&_nc_ht=scontent.fdad2-1.fna&oh=73cf1acc600c5a59f4fec878b137258a&oe=5CE4BECA" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/49650748_541620912978732_6872672496575840256_n.png?_nc_cat=101&_nc_oc=AQkCGgaGBfzXfrOCdW9o6zxOM2gOgRzqR-mdk86hLVEaTwr6m2lbh-xdX3k8hWcqQvI&_nc_ht=scontent.fdad2-1.fna&oh=73cf1acc600c5a59f4fec878b137258a&oe=5CE4BECA" alt="" title="Tue Jan 08 2019 19:30:59 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div><div class="message__item message__item--bot">
+							<a class="bot_item" href="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-0/p480x480/49791009_231720874411423_2448686466063138816_n.png?_nc_cat=105&_nc_oc=AQleeSYYhsRb6baJSbCbSmtSPQVZyqy-o46Sz65AWtUyOBJKB_7T1ak1IXoge-qAoEM&_nc_ht=scontent.fdad1-1.fna&oh=2470e424e071e619249e99d28bbaa5a4&oe=5CF4ECB0" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-0/p480x480/49791009_231720874411423_2448686466063138816_n.png?_nc_cat=105&_nc_oc=AQleeSYYhsRb6baJSbCbSmtSPQVZyqy-o46Sz65AWtUyOBJKB_7T1ak1IXoge-qAoEM&_nc_ht=scontent.fdad1-1.fna&oh=2470e424e071e619249e99d28bbaa5a4&oe=5CF4ECB0" alt="" title="Tue Jan 08 2019 19:30:59 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:31:08 GMT+0700 (Giờ Đông Dương)">Ok rồi đó</span>
+				</div></div><div class="message__list">
+						<div class="message__item message__item--bot">
+						<a class="bot_item" href="https://www.facebook.com/trungkien.vy.5" target="_blank">
+						<img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-1/c0.0.356.356a/34102598_774102672978178_4899376143527837696_n.jpg?_nc_cat=108&_nc_oc=AQkIIvEUX1LOdvYEomAwhhoXdJRjz_-W8EspT6d-uLbSGr0kEY2QqTUpG1uobsYZSMY&_nc_ht=scontent.fdad2-1.fna&oh=a3936fa2c0d40c9a4f2a4da9b12737f5&oe=5CF79C82" alt="" title="Tue Jan 08 2019 19:31:42 GMT+0700 (Giờ Đông Dương)">
+						</a>
+						</div><div class="message__item message__item--bot">
+						<a href="https://www.facebook.com/trungkien.vy.5" target="_blank">  
+						<span class="message message--bot" title="Tue Jan 08 2019 19:31:42 GMT+0700 (Giờ Đông Dương)">Trung Kiên</span>
+						</a>
+						</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:31:48 GMT+0700 (Giờ Đông Dương)">fb thằng đó đây</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:32:09 GMT+0700 (Giờ Đông Dương)">Oke</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:32:26 GMT+0700 (Giờ Đông Dương)">Cứ mỗi đứa 400, k giới hạn đâu nha</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:32:30 GMT+0700 (Giờ Đông Dương)">ok ok</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:32:38 GMT+0700 (Giờ Đông Dương)">có gì tui mần thêm cho</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:32:50 GMT+0700 (Giờ Đông Dương)">tết nên nhiều đứa kẹt tiền lắm</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50309988_285082552159905_8943195093750251520_n.png?_nc_cat=100&_nc_oc=AQmyQ7foPw5ohLSQratdRX1yvGXjoGWylYMnsv1L5s_sRbVPPNWVXLWrfLLei94NKgE&_nc_ht=scontent.fdad1-1.fna&oh=432411185e80d154ef04c0b120f24dcf&oe=5CF515DC" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50309988_285082552159905_8943195093750251520_n.png?_nc_cat=100&_nc_oc=AQmyQ7foPw5ohLSQratdRX1yvGXjoGWylYMnsv1L5s_sRbVPPNWVXLWrfLLei94NKgE&_nc_ht=scontent.fdad1-1.fna&oh=432411185e80d154ef04c0b120f24dcf&oe=5CF515DC" alt="" title="Tue Jan 08 2019 19:32:56 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:33:01 GMT+0700 (Giờ Đông Dương)">Ns nó rep tui nha</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:33:27 GMT+0700 (Giờ Đông Dương)">ok để tui nói</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:36:56 GMT+0700 (Giờ Đông Dương)">Chiều mai ông dẫn nó đi đc k</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:37:10 GMT+0700 (Giờ Đông Dương)">được chớ</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:37:15 GMT+0700 (Giờ Đông Dương)">mai tui rảnh cả ngày</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 08 2019 19:37:22 GMT+0700 (Giờ Đông Dương)">Ok rứa chiều mai ông dẫn nó đi đi</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 08 2019 19:37:32 GMT+0700 (Giờ Đông Dương)">ok ok v để tui</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 07:12:44 GMT+0700 (Giờ Đông Dương)">Đâu rồi bạn</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 08:10:15 GMT+0700 (Giờ Đông Dương)">Sao trễ quá v bạn</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 08:17:11 GMT+0700 (Giờ Đông Dương)">Ngủ quên :|</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 08:17:46 GMT+0700 (Giờ Đông Dương)">-_-</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 08:20:01 GMT+0700 (Giờ Đông Dương)">Ông ở chỗ nào nhỉ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 08:20:22 GMT+0700 (Giờ Đông Dương)">ông biết quán photo chỗ gần đường âu cơ ko</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 08:20:44 GMT+0700 (Giờ Đông Dương)">Kế Tân hưng yên à</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 08:20:52 GMT+0700 (Giờ Đông Dương)">ừm</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 08:21:02 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 08:21:10 GMT+0700 (Giờ Đông Dương)">tới đó alo tui ra</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 08:21:12 GMT+0700 (Giờ Đông Dương)">20p nữa tui tới</span>
+				</div><div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/16686102_181834655642850_4210547626443014144_n.png?_nc_cat=1&_nc_oc=AQlj5RL07i36b9DBIlnI0OxCvWuiyRaNtMIlwo52JW4Uiw1j3Jh8OLO1QoTSu00Sbw8&_nc_ht=scontent.fdad2-1.fna&oh=8593b839729c70905840b94e2d9bb36b&oe=5CEE74A5" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/16686102_181834655642850_4210547626443014144_n.png?_nc_cat=1&_nc_oc=AQlj5RL07i36b9DBIlnI0OxCvWuiyRaNtMIlwo52JW4Uiw1j3Jh8OLO1QoTSu00Sbw8&_nc_ht=scontent.fdad2-1.fna&oh=8593b839729c70905840b94e2d9bb36b&oe=5CEE74A5" alt="" title="Wed Jan 09 2019 08:21:15 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 08:21:17 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 08:21:29 GMT+0700 (Giờ Đông Dương)">Thông cảm</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 08:21:38 GMT+0700 (Giờ Đông Dương)">Đêm qua thức khuya quá</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 08:21:50 GMT+0700 (Giờ Đông Dương)">Mà sáng quen cài báo thức</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 08:22:09 GMT+0700 (Giờ Đông Dương)">à cần giấy tờ gì ko</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 08:22:33 GMT+0700 (Giờ Đông Dương)">Cmnd thôi</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 08:22:39 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 09:09:10 GMT+0700 (Giờ Đông Dương)">Bạn đã gọi Chính.</span>
+				</div></div><div class="message__list">
+						<div class="message__item message__item--bot">
+						<a class="bot_item" href="https://www.facebook.com/profile.php?id=100012989321165" target="_blank">
+						<img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-1/c0.0.1500.1500a/50882592_597208840722088_4928552560744202240_o.jpg?_nc_cat=111&_nc_oc=AQmGyrUWEbIyGO-JXWf4oVLwmke-hkEMsZRVPxdYQbesAJVdZhNnZPEf_5ezY7FbDqU&_nc_ht=scontent.fdad2-1.fna&oh=de0bf8986b0d45641533188c462ccb05&oe=5CE74B8C" alt="" title="Wed Jan 09 2019 11:25:57 GMT+0700 (Giờ Đông Dương)">
+						</a>
+						</div><div class="message__item message__item--bot">
+						<a href="https://www.facebook.com/profile.php?id=100012989321165" target="_blank">  
+						<span class="message message--bot" title="Wed Jan 09 2019 11:25:57 GMT+0700 (Giờ Đông Dương)">Thành Long</span>
+						</a>
+						</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:26:06 GMT+0700 (Giờ Đông Dương)">1 cu nữa nè.</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:26:12 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:26:22 GMT+0700 (Giờ Đông Dương)">Gửi cái ttc ACB t vs</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:26:32 GMT+0700 (Giờ Đông Dương)">hết giờ rồi họ ko làm á</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:26:35 GMT+0700 (Giờ Đông Dương)">chiều mới làm</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:26:46 GMT+0700 (Giờ Đông Dương)">@@</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:27:06 GMT+0700 (Giờ Đông Dương)">Gửi sđt 2 cái kia luôn với</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:27:20 GMT+0700 (Giờ Đông Dương)">Ok xíu gửi. Đg ăn</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:27:32 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:32:40 GMT+0700 (Giờ Đông Dương)">thằng ni nữa nge.</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:34:26 GMT+0700 (Giờ Đông Dương)">Đù</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:34:29 GMT+0700 (Giờ Đông Dương)">Tốc độ z</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:35:00 GMT+0700 (Giờ Đông Dương)">qua tuần sau mà làm được thì thêm mấy thằng nữa á</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:35:18 GMT+0700 (Giờ Đông Dương)">Ra tết đi :3</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:35:40 GMT+0700 (Giờ Đông Dương)">thêm 1 thằng tuần này nữa được không</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:35:50 GMT+0700 (Giờ Đông Dương)">hn đang ở quê.</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:36:00 GMT+0700 (Giờ Đông Dương)">Mai or mốt ra ĐN đc k</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:36:13 GMT+0700 (Giờ Đông Dương)">thằng tui mới gửi là sáng thứ 5 rảnh</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:36:25 GMT+0700 (Giờ Đông Dương)">còn thằng khi nãy gửi là thứ 6 hn rảnh</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:36:38 GMT+0700 (Giờ Đông Dương)">còn để hỏi thằng ni thử</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:36:43 GMT+0700 (Giờ Đông Dương)">được tui gửi qua</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:36:49 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 11:37:07 GMT+0700 (Giờ Đông Dương)">tý gửi thông tin qua luôn cho tui với</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 11:38:05 GMT+0700 (Giờ Đông Dương)">Rồi rồi</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 12:11:05 GMT+0700 (Giờ Đông Dương)">Tech: 0934372640</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 12:11:49 GMT+0700 (Giờ Đông Dương)">Vib: 0934264512</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 12:11:57 GMT+0700 (Giờ Đông Dương)">Vib tui đk trc rồi nghe</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 12:12:02 GMT+0700 (Giờ Đông Dương)">ok ok</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 12:12:23 GMT+0700 (Giờ Đông Dương)">217-219 Lê Duẩn nha</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 12:12:41 GMT+0700 (Giờ Đông Dương)">Tên truy cập đã đk là NTCHINH233</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 12:13:46 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 13:58:05 GMT+0700 (Giờ Đông Dương)">Đi làm chưa</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 15:55:35 GMT+0700 (Giờ Đông Dương)">xong tất cả rồi đấy</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 15:55:40 GMT+0700 (Giờ Đông Dương)">thằng kiên sao rồi</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<audio controls=true src="https://cdn.fbsbx.com/v/t59.3654-21/50092200_284828322234737_9065177585205379072_n.mp4/audioclip-1547024186000-3669.mp4?_nc_cat=109&_nc_oc=AQmJtWPufNqUmRrWMjzZe-ucDAxkFtkAbmMutaM6qJ6kIrppiOPgpfmm-J9zgHzrcS4&_nc_ht=cdn.fbsbx.com&oh=7ca3f88a17b08a5d9013a5340fc3f840&oe=5C5BA155&dl=1" title="Wed Jan 09 2019 15:56:26 GMT+0700 (Giờ Đông Dương)"></audio>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 15:56:50 GMT+0700 (Giờ Đông Dương)">ừm giấy tờ khi nào đưa ông đây</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 15:57:22 GMT+0700 (Giờ Đông Dương)">hay tý chở nó về ghé chỗ tui lấy</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Wed Jan 09 2019 16:17:27 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 16:29:30 GMT+0700 (Giờ Đông Dương)">thằng này không được nha</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 16:29:43 GMT+0700 (Giờ Đông Dương)">nó bận việc ở quê ra ko đc</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:10:07 GMT+0700 (Giờ Đông Dương)">ê ông ib cho thằng kia chưa</span>
+				</div><div class="message__item message__item--bot">
+						<a class="bot_item" href="https://www.facebook.com/profile.php?id=100012478392570" target="_blank">
+						<img src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-1/42388224_508311026261506_1759031154888933376_n.jpg?_nc_cat=106&_nc_oc=AQnsiq16-WDeITXy6zzIVYdVuEtXlLLgJS7OFvwHibK0yDHFmbb1fgkWo_Kp9C92eGE&_nc_ht=scontent.fdad1-1.fna&oh=7ef7650f74260e54e8809e8c30205784&oe=5CE87BC4" alt="" title="Wed Jan 09 2019 21:10:16 GMT+0700 (Giờ Đông Dương)">
+						</a>
+						</div><div class="message__item message__item--bot">
+						<a href="https://www.facebook.com/profile.php?id=100012478392570" target="_blank">  
+						<span class="message message--bot" title="Wed Jan 09 2019 21:10:16 GMT+0700 (Giờ Đông Dương)">Nguyễn Huy Hoàng</span>
+						</a>
+						</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:11:01 GMT+0700 (Giờ Đông Dương)">Thg nào á</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:11:06 GMT+0700 (Giờ Đông Dương)">Thg Long k làm đc mà</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:11:35 GMT+0700 (Giờ Đông Dương)">thằng ni tui gửi sau thằng long đó</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:11:44 GMT+0700 (Giờ Đông Dương)">hn chỉ rảnh sáng mai thôi á</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:11:52 GMT+0700 (Giờ Đông Dương)">ông sắp xếp cho hn giùm tui cái</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:12:02 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:12:05 GMT+0700 (Giờ Đông Dương)">Sáng mai</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:12:09 GMT+0700 (Giờ Đông Dương)">ib với hắn đã</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:12:18 GMT+0700 (Giờ Đông Dương)">Ns hắn đi</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:12:23 GMT+0700 (Giờ Đông Dương)">tui nói rồi</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:12:30 GMT+0700 (Giờ Đông Dương)">chừ ông chỉ ib cho hn nữa thôi</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:13:36 GMT+0700 (Giờ Đông Dương)">Tui inb nó r</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:14:32 GMT+0700 (Giờ Đông Dương)">ok để tui nói nó rep</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:14:37 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:14:42 GMT+0700 (Giờ Đông Dương)">Ns đi</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:14:45 GMT+0700 (Giờ Đông Dương)">Xíu tui nch</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:14:50 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 21:14:59 GMT+0700 (Giờ Đông Dương)">Đang đá banh bên sân Phạm Như Xương</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 21:16:13 GMT+0700 (Giờ Đông Dương)">ừm</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/49342431_319333062246905_1338046672512483328_n.png?_nc_cat=101&_nc_oc=AQlwf8O92GF4Hf1ke7aAqwwuC_UTqG0i__UK3pQJoP9atRzZ59gV47c4iXBSSfZxF5g&_nc_ht=scontent.fdad2-1.fna&oh=d41abf49083241080ec36f457b3943ca&oe=5CF6F3A1" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/49342431_319333062246905_1338046672512483328_n.png?_nc_cat=101&_nc_oc=AQlwf8O92GF4Hf1ke7aAqwwuC_UTqG0i__UK3pQJoP9atRzZ59gV47c4iXBSSfZxF5g&_nc_ht=scontent.fdad2-1.fna&oh=d41abf49083241080ec36f457b3943ca&oe=5CF6F3A1" alt="" title="Wed Jan 09 2019 22:59:49 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 22:59:51 GMT+0700 (Giờ Đông Dương)">Yếu</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 09 2019 23:07:32 GMT+0700 (Giờ Đông Dương)">để tui nói hn thử</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 09 2019 23:07:47 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 10 2019 12:09:47 GMT+0700 (Giờ Đông Dương)">Thêm ai ko</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 10 2019 12:10:05 GMT+0700 (Giờ Đông Dương)">chưa có -_- tụi nớ sợ</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 10 2019 12:11:24 GMT+0700 (Giờ Đông Dương)">Sợ gặp tui nch</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 10 2019 12:11:29 GMT+0700 (Giờ Đông Dương)">Rồi có gì tui gth cho</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 10 2019 12:12:56 GMT+0700 (Giờ Đông Dương)">tụi nó ko chịu</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 10 2019 12:13:27 GMT+0700 (Giờ Đông Dương)">Ra gặp nhau nch chứ tui có ăn thịt tụi nó đâu mà sợ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 10 2019 12:17:03 GMT+0700 (Giờ Đông Dương)">để coi còn em nào nữa đã</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 10 2019 12:20:01 GMT+0700 (Giờ Đông Dương)">Okay</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 15:06:00 GMT+0700 (Giờ Đông Dương)">Hú</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 15:06:04 GMT+0700 (Giờ Đông Dương)">Mai đi lấy hỉ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 17:51:30 GMT+0700 (Giờ Đông Dương)">mấy giờ</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 18:34:42 GMT+0700 (Giờ Đông Dương)">7:30 đi nghe</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 18:35:04 GMT+0700 (Giờ Đông Dương)">À vs lại ông có đứa nào làm tuần này thì báo t nghe tuần này vẫn làm</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 19:08:38 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 19:08:49 GMT+0700 (Giờ Đông Dương)">à mà nhớ cho tui ứng trước 500k nge</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 19:45:04 GMT+0700 (Giờ Đông Dương)">mai đúng giờ nge</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 19:45:16 GMT+0700 (Giờ Đông Dương)">8h30 tui có việc rồi á</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 19:51:41 GMT+0700 (Giờ Đông Dương)">Vcl</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 19:51:46 GMT+0700 (Giờ Đông Dương)">K đủ giờ nghe</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 19:51:58 GMT+0700 (Giờ Đông Dương)">đi lấy thôi mà</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 19:55:01 GMT+0700 (Giờ Đông Dương)">Còn sửa lỗi nữa</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 19:55:15 GMT+0700 (Giờ Đông Dương)">ủa lỗi gì</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:01:02 GMT+0700 (Giờ Đông Dương)">À k có gid</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:01:05 GMT+0700 (Giờ Đông Dương)">Đủ tt r</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:01:14 GMT+0700 (Giờ Đông Dương)">Chỉ lấy thẻ r về thôi</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:01:24 GMT+0700 (Giờ Đông Dương)">À cái Mari sai sđt</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:01:35 GMT+0700 (Giờ Đông Dương)">sao lại sai</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:01:48 GMT+0700 (Giờ Đông Dương)">Để coi lại</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:01:58 GMT+0700 (Giờ Đông Dương)">sai rồi giờ sao biết ngày lấy</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:02:17 GMT+0700 (Giờ Đông Dương)">K quan trọng đúng ngày lên lấy thôi</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:02:36 GMT+0700 (Giờ Đông Dương)">ông nt sđt qua tui mà sao lại sai</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:02:39 GMT+0700 (Giờ Đông Dương)">ông đùa á</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:02:57 GMT+0700 (Giờ Đông Dương)">À thg Kiên sai</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:03:28 GMT+0700 (Giờ Đông Dương)">ừm cái nớ ông nói thằng kiên chớ sao nói t</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:10:05 GMT+0700 (Giờ Đông Dương)">Thì nhầm ông sai</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:10:31 GMT+0700 (Giờ Đông Dương)">ừm mai đi đúng giờ nhé. tui bận việc qtr</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:10:45 GMT+0700 (Giờ Đông Dương)">Chiều mai đi đc nữa k</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:11:54 GMT+0700 (Giờ Đông Dương)">Thì đi lấy mấy cái dưới phố nếu kịp thì lấy trên này còn ko thì tui lấy mấy cái trên này cho</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:12:16 GMT+0700 (Giờ Đông Dương)">Ông có xe thì tự đi đc k</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:12:22 GMT+0700 (Giờ Đông Dương)">Mấy cái trên này ấy</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:13:05 GMT+0700 (Giờ Đông Dương)">ĐƯợc thì ông trả tiền xăng cho tui tui đi lấy hết lần luôn</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:13:32 GMT+0700 (Giờ Đông Dương)">Đưa 50k đủ k</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:13:36 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:13:41 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:13:58 GMT+0700 (Giờ Đông Dương)">Lấy thẻ xong làm gì nữa</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:14:14 GMT+0700 (Giờ Đông Dương)">Lấy thẻ x đem về cho tui</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:14:44 GMT+0700 (Giờ Đông Dương)">RỒi khi nào t đưa thẻ là ông đưa tiền luôn à</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:14:50 GMT+0700 (Giờ Đông Dương)">Ko</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:15:06 GMT+0700 (Giờ Đông Dương)">Nào tui lấy thẻ đc tui ứng cho 5 xị</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:15:23 GMT+0700 (Giờ Đông Dương)">v khi nào tui mới có đủ tiền</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:15:34 GMT+0700 (Giờ Đông Dương)">T2 tuần sau</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:15:46 GMT+0700 (Giờ Đông Dương)">ông còn làm gì nữa</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:20:39 GMT+0700 (Giờ Đông Dương)">Còn đem giao chứ k lẽ đem muối ông</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:20:59 GMT+0700 (Giờ Đông Dương)">Giao rồi họ mới đưa tiền hả</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:21:12 GMT+0700 (Giờ Đông Dương)">Ừ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:21:31 GMT+0700 (Giờ Đông Dương)">sáng mai tui đi lấy thẻ</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:21:34 GMT+0700 (Giờ Đông Dương)">khi nào ông qua</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 15 2019 20:21:46 GMT+0700 (Giờ Đông Dương)">Trưa mai</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:22:31 GMT+0700 (Giờ Đông Dương)">điện thoại tui bị mất rồi</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 15 2019 20:22:37 GMT+0700 (Giờ Đông Dương)">có gì nt qua fb nhé</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Tue Jan 15 2019 20:26:41 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 07:28:41 GMT+0700 (Giờ Đông Dương)">Chính đã bỏ lỡ cuộc gọi của bạn.</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:04:31 GMT+0700 (Giờ Đông Dương)">Duma</span>
+				</div><div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/36873503_237318547087805_6018490268330754048_n.png?_nc_cat=1&_nc_oc=AQnsP6r7aOE6EBuxsJoePZaEiaFNnA5GVgM3djaxqf5gM5ivGiGqHbEUspOHlqQC3hE&_nc_ht=scontent.fdad2-1.fna&oh=d512173150da3d400b9a54ed6db2c06d&oe=5CB85065" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/36873503_237318547087805_6018490268330754048_n.png?_nc_cat=1&_nc_oc=AQnsP6r7aOE6EBuxsJoePZaEiaFNnA5GVgM3djaxqf5gM5ivGiGqHbEUspOHlqQC3hE&_nc_ht=scontent.fdad2-1.fna&oh=d512173150da3d400b9a54ed6db2c06d&oe=5CB85065" alt="" title="Wed Jan 16 2019 08:04:35 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:13:18 GMT+0700 (Giờ Đông Dương)">Ri là hỏng cmnr</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 08:22:56 GMT+0700 (Giờ Đông Dương)">gì v</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:45:32 GMT+0700 (Giờ Đông Dương)">Sao gọi k đc</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:45:36 GMT+0700 (Giờ Đông Dương)">Snags nay đi lấy đấy</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 08:49:21 GMT+0700 (Giờ Đông Dương)">ủa chớ kêu tui tự đi lấy mà</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:49:36 GMT+0700 (Giờ Đông Dương)">Còn viedjc nưaz</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:49:48 GMT+0700 (Giờ Đông Dương)">Mà thôi</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:49:53 GMT+0700 (Giờ Đông Dương)">Ông biết địa chỉ hết ko</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:49:55 GMT+0700 (Giờ Đông Dương)">Đi lấy đi</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 08:50:07 GMT+0700 (Giờ Đông Dương)">đi làm rồi ko lẻ ko biết</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 08:50:20 GMT+0700 (Giờ Đông Dương)">khi tối ông nói tui đây lấy ông đưa tiền xăng tui mà</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:50:33 GMT+0700 (Giờ Đông Dương)">2 cái dưới phố là 217-219 Lê Duẩn, VIB. Cái thứ 2 là Maritime Bank, 183 Nguyễn Hữu Thọ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 08:50:49 GMT+0700 (Giờ Đông Dương)">ok tui nhớ mà</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 08:51:11 GMT+0700 (Giờ Đông Dương)">ủa mà hồi tối kêu tui tự đi lấy mà</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:52:54 GMT+0700 (Giờ Đông Dương)">Thì tự đi nhưng ông phải báo để tui quản lý</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 08:53:03 GMT+0700 (Giờ Đông Dương)">Chứ biết đg nào mà chờ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 09:02:06 GMT+0700 (Giờ Đông Dương)">thì trưa ông lên có thẻ cho ông đc thôi</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:27:45 GMT+0700 (Giờ Đông Dương)">có thẻ rồi đó</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:27:54 GMT+0700 (Giờ Đông Dương)">còn cái bidv chư có thôi</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 11:27:55 GMT+0700 (Giờ Đông Dương)">Xong hết chưa</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 11:27:59 GMT+0700 (Giờ Đông Dương)">Bi bao giờ có</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:28:12 GMT+0700 (Giờ Đông Dương)">họ kêu nt vô sđt</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:28:20 GMT+0700 (Giờ Đông Dương)">khi nào nt lên nhận</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 11:28:40 GMT+0700 (Giờ Đông Dương)">s k hỏi, số Bi có cầm đâu</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:28:59 GMT+0700 (Giờ Đông Dương)">ổng nói thứ 6 ni có</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:29:10 GMT+0700 (Giờ Đông Dương)">đc 5 cái rồi đó</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 11:30:32 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 11:30:39 GMT+0700 (Giờ Đông Dương)">Rứa t6 đi lấy đi</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:30:46 GMT+0700 (Giờ Đông Dương)">ừm</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:30:50 GMT+0700 (Giờ Đông Dương)">khi nào lên nhận thẻ</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 11:30:56 GMT+0700 (Giờ Đông Dương)">Chiều t ghé</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:31:02 GMT+0700 (Giờ Đông Dương)">chiều đi học</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 11:31:11 GMT+0700 (Giờ Đông Dương)">ghé trước 2h30</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Wed Jan 16 2019 11:31:29 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 18:08:14 GMT+0700 (Giờ Đông Dương)">ko lấy thẻ à</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 16 2019 18:24:39 GMT+0700 (Giờ Đông Dương)">Chính đã bỏ lỡ cuộc gọi của bạn.</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 21:51:26 GMT+0700 (Giờ Đông Dương)">đi chơi giờ mới về</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 16 2019 21:51:29 GMT+0700 (Giờ Đông Dương)">ông lên à</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 17 2019 10:06:08 GMT+0700 (Giờ Đông Dương)">Bạn đã gọi Chính.</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 09:23:56 GMT+0700 (Giờ Đông Dương)">ê</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Fri Jan 18 2019 09:24:04 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 09:24:10 GMT+0700 (Giờ Đông Dương)">lên lấy thẻ</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Fri Jan 18 2019 09:24:26 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 09:24:42 GMT+0700 (Giờ Đông Dương)">nhớ mang tiền nge</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Fri Jan 18 2019 09:24:45 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 09:24:56 GMT+0700 (Giờ Đông Dương)">mấy giờ lên</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 09:25:02 GMT+0700 (Giờ Đông Dương)">Lên thì gọi</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 09:25:06 GMT+0700 (Giờ Đông Dương)">Đang bận bên trg</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 09:25:18 GMT+0700 (Giờ Đông Dương)">đth t mất rồi nt qua fb chớ ko gọi đc</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Fri Jan 18 2019 09:30:49 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 09:31:02 GMT+0700 (Giờ Đông Dương)">lên sớm nge</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 11:46:50 GMT+0700 (Giờ Đông Dương)">Bạn đã gọi Chính.</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 11:59:06 GMT+0700 (Giờ Đông Dương)">ê</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:00:50 GMT+0700 (Giờ Đông Dương)">số tài khoản đó tp tui không nhớ</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:01:09 GMT+0700 (Giờ Đông Dương)">chừ còn cái đông á với agri á</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:08:37 GMT+0700 (Giờ Đông Dương)">9704230882880209 số tài khoản tpbank</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Fri Jan 18 2019 12:11:46 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:11:52 GMT+0700 (Giờ Đông Dương)">ê</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:12:07 GMT+0700 (Giờ Đông Dương)">số tài khoản tpbank có phải số in trên thẻ nớ ko</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 12:12:19 GMT+0700 (Giờ Đông Dương)">Ko</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 12:12:26 GMT+0700 (Giờ Đông Dương)">Đó là số thẻ</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 12:12:27 GMT+0700 (Giờ Đông Dương)">Mf cx đc</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:12:38 GMT+0700 (Giờ Đông Dương)">rứa chuyển được ko</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:14:58 GMT+0700 (Giờ Đông Dương)">hay là ông chuyển qua cái agri của tui đi</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 12:16:01 GMT+0700 (Giờ Đông Dương)">Agri mốt tới à</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:16:19 GMT+0700 (Giờ Đông Dương)">Chớ số tpbank đó chuyển được ko</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 12:16:25 GMT+0700 (Giờ Đông Dương)">Được</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 12:16:25 GMT+0700 (Giờ Đông Dương)">Đm</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 12:16:35 GMT+0700 (Giờ Đông Dương)">Đã nói cx đc rồi</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 12:16:39 GMT+0700 (Giờ Đông Dương)">Hỏi hoài</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 12:16:49 GMT+0700 (Giờ Đông Dương)">Trễ giờ xe chạy cái ăn cho đủ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:17:04 GMT+0700 (Giờ Đông Dương)">v chuyển sớm nge</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Fri Jan 18 2019 12:17:09 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:23:38 GMT+0700 (Giờ Đông Dương)">02561046701</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 12:23:46 GMT+0700 (Giờ Đông Dương)">số tài khoản tpbank</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 13:05:17 GMT+0700 (Giờ Đông Dương)">ê</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 13:05:20 GMT+0700 (Giờ Đông Dương)">gửi chưa</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Fri Jan 18 2019 13:05:28 GMT+0700 (Giờ Đông Dương)">Chưa</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 13:05:37 GMT+0700 (Giờ Đông Dương)">nhanh đi ông</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 13:05:43 GMT+0700 (Giờ Đông Dương)">2h30 hn qua tui rồi</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Fri Jan 18 2019 13:26:13 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 13:26:20 GMT+0700 (Giờ Đông Dương)">gửi rồi á</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50088460_298305067703436_3649820133913788416_n.png?_nc_cat=109&_nc_oc=AQkCowUjWaxexOXTU3WFF1oIqRfcXoSYONTpTNw-RZh-T8nLpxih08QJL8yrOvpfxCQ&_nc_ht=scontent.fdad2-1.fna&oh=868f615b7ae7e4c6f8dbf7211d15a356&oe=5CF1EFB0" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50088460_298305067703436_3649820133913788416_n.png?_nc_cat=109&_nc_oc=AQkCowUjWaxexOXTU3WFF1oIqRfcXoSYONTpTNw-RZh-T8nLpxih08QJL8yrOvpfxCQ&_nc_ht=scontent.fdad2-1.fna&oh=868f615b7ae7e4c6f8dbf7211d15a356&oe=5CF1EFB0" alt="" title="Fri Jan 18 2019 13:28:27 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Fri Jan 18 2019 13:28:47 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 11:53:40 GMT+0700 (Giờ Đông Dương)">khi nào có tiền v</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 11:53:58 GMT+0700 (Giờ Đông Dương)">Có t liên hệ</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 11:54:02 GMT+0700 (Giờ Đông Dương)">Chứ t giữ làm gì</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 11:54:07 GMT+0700 (Giờ Đông Dương)">Hôm nay thứ 2 rồi</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 11:54:19 GMT+0700 (Giờ Đông Dương)">Có khi đến cuối ngày mới có lận</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 11:54:24 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/17639050_2041020056125468_108704166267846656_n.png?_nc_cat=1&_nc_oc=AQm6FaeEzxdeNvs6LDnBF6yaJf9ZBCZ_kbKc64_3sFQfnyfzzkH3hkrK-Ue75p344S4&_nc_ht=scontent.fdad2-1.fna&oh=51924f56d5cfacb00e794ca778d2ff91&oe=5CF3BFA4" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/17639050_2041020056125468_108704166267846656_n.png?_nc_cat=1&_nc_oc=AQm6FaeEzxdeNvs6LDnBF6yaJf9ZBCZ_kbKc64_3sFQfnyfzzkH3hkrK-Ue75p344S4&_nc_ht=scontent.fdad2-1.fna&oh=51924f56d5cfacb00e794ca778d2ff91&oe=5CF3BFA4" alt="" title="Mon Jan 21 2019 11:54:26 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 11:54:36 GMT+0700 (Giờ Đông Dương)">thằng kiên có luôn chưa</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 11:54:46 GMT+0700 (Giờ Đông Dương)">Chưa ai có hết</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 11:55:00 GMT+0700 (Giờ Đông Dương)">Ý là ngày ni thằng kiên cũng nhận luôn chớ hả</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 11:55:10 GMT+0700 (Giờ Đông Dương)">Ừm nếu đc thanh toán</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 11:55:30 GMT+0700 (Giờ Đông Dương)">à còn tiền hoa hồng của tui ông chuyển qua cho nó luôn hay cho tui</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 11:55:50 GMT+0700 (Giờ Đông Dương)">Chuyển ông chứ chuyển nó chi</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 11:55:54 GMT+0700 (Giờ Đông Dương)">ok ok</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Mon Jan 21 2019 11:56:06 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 19:56:44 GMT+0700 (Giờ Đông Dương)">Có tiền chưa</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 20:01:56 GMT+0700 (Giờ Đông Dương)">Chưa ông ơi</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 20:02:23 GMT+0700 (Giờ Đông Dương)">Có cần gấp ko chứ phải đến tối mai thì may ra</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 20:02:34 GMT+0700 (Giờ Đông Dương)">Tôi còn hơn 800 đây</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 20:14:52 GMT+0700 (Giờ Đông Dương)">tối ni chưa gấp chớ tối mai thì gấp á</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 20:15:04 GMT+0700 (Giờ Đông Dương)">Chiều mai á</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 20:15:11 GMT+0700 (Giờ Đông Dương)">ok v chiều mai nha</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 20:15:27 GMT+0700 (Giờ Đông Dương)">à còn tiền hoa hồng thằng bảo ổng gửi nó hay gửi qua tui</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 20:15:31 GMT+0700 (Giờ Đông Dương)">nó nhờ tui hỏi giùm</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Mon Jan 21 2019 20:15:38 GMT+0700 (Giờ Đông Dương)">Qua nó nha</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 20:15:42 GMT+0700 (Giờ Đông Dương)">ừm</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Mon Jan 21 2019 20:15:47 GMT+0700 (Giờ Đông Dương)">để t nói lại</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:17:11 GMT+0700 (Giờ Đông Dương)">CÓ chưa v</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 22 2019 17:36:07 GMT+0700 (Giờ Đông Dương)">Chưa tới hic</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:36:28 GMT+0700 (Giờ Đông Dương)">tui đang cần gấp ông chuyển qua đc ko</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 22 2019 17:36:49 GMT+0700 (Giờ Đông Dương)">Chưa có sao chuyển giờ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:36:50 GMT+0700 (Giờ Đông Dương)">tui nói hôm qua r đó</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 22 2019 17:36:55 GMT+0700 (Giờ Đông Dương)">Còn 500 à</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:37:12 GMT+0700 (Giờ Đông Dương)">chớ hôm qua ông kêu còn hơn 800 mà</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 22 2019 17:37:47 GMT+0700 (Giờ Đông Dương)">Hqa tiêm thuốc cho chó</span>
+				</div><div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50503804_2215240728526192_2250750347016404992_n.jpg?_nc_cat=101&_nc_oc=AQnzRD8eUyPfamqKKFFojTBq7t-wJ7-Kv8CgSTeMwRgwaBZc4pH5fKvbd9yropWhA3c&_nc_ht=scontent.fdad2-1.fna&oh=5bee72b1542f4beaeda8d2d0ceafff98&oe=5CB89AA2" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50503804_2215240728526192_2250750347016404992_n.jpg?_nc_cat=101&_nc_oc=AQnzRD8eUyPfamqKKFFojTBq7t-wJ7-Kv8CgSTeMwRgwaBZc4pH5fKvbd9yropWhA3c&_nc_ht=scontent.fdad2-1.fna&oh=5bee72b1542f4beaeda8d2d0ceafff98&oe=5CB89AA2" alt="" title="Tue Jan 22 2019 17:37:59 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:38:20 GMT+0700 (Giờ Đông Dương)">Hôm qua tui nói trước rồi đó.</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:38:25 GMT+0700 (Giờ Đông Dương)">Ông gửi sớm cho tui đi</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:38:29 GMT+0700 (Giờ Đông Dương)">đang cần gấp</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 22 2019 17:39:09 GMT+0700 (Giờ Đông Dương)">Còn 500 đc ko</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 22 2019 17:39:17 GMT+0700 (Giờ Đông Dương)">Đc thì gửi stk t chuyển</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:39:33 GMT+0700 (Giờ Đông Dương)">số tài khoản bữa trước đó</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:40:11 GMT+0700 (Giờ Đông Dương)">02561046701</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:40:14 GMT+0700 (Giờ Đông Dương)">tp bank</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Tue Jan 22 2019 17:40:45 GMT+0700 (Giờ Đông Dương)">R đó</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:41:05 GMT+0700 (Giờ Đông Dương)">chưa thấy</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50799561_526015751220230_970308999943553024_n.png?_nc_cat=109&_nc_oc=AQllFOvwnW3Lq3wFK_wrFlxriCeAdPgwqDp4hVffZpnp2UwEfWwLKGZcY3EvqoC9k9Y&_nc_ht=scontent.fdad2-1.fna&oh=2c9241bcfaf91646f148016296aec228&oe=5CF2D74B" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50799561_526015751220230_970308999943553024_n.png?_nc_cat=109&_nc_oc=AQllFOvwnW3Lq3wFK_wrFlxriCeAdPgwqDp4hVffZpnp2UwEfWwLKGZcY3EvqoC9k9Y&_nc_ht=scontent.fdad2-1.fna&oh=2c9241bcfaf91646f148016296aec228&oe=5CF2D74B" alt="" title="Tue Jan 22 2019 17:41:44 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Tue Jan 22 2019 17:42:14 GMT+0700 (Giờ Đông Dương)">ok chắc chưa qua</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 17:44:21 GMT+0700 (Giờ Đông Dương)">ê</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 17:44:25 GMT+0700 (Giờ Đông Dương)">chiều ni có tiền chưa</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:04:43 GMT+0700 (Giờ Đông Dương)">T chuyển r mà bấm nhầm ck thường cái phải sáng mai ms qua ông lận</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 18:05:06 GMT+0700 (Giờ Đông Dương)">thật ko v</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:14:33 GMT+0700 (Giờ Đông Dương)">Thật</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 18:21:39 GMT+0700 (Giờ Đông Dương)">chuyển bao nhiêu á</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:22:03 GMT+0700 (Giờ Đông Dương)">500 thì phải :v</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:22:09 GMT+0700 (Giờ Đông Dương)">Còn bên ông bn</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 18:22:45 GMT+0700 (Giờ Đông Dương)">của thằng bảo với của tui luôn mà sao có 500</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:22:58 GMT+0700 (Giờ Đông Dương)">Thì chưa đủ mà</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 18:24:04 GMT+0700 (Giờ Đông Dương)">Sao nói hôm ni chuyển đủ mà hay v</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:24:20 GMT+0700 (Giờ Đông Dương)">Đã làm sổ đâu</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:25:04 GMT+0700 (Giờ Đông Dương)">Của ông 2 đứa là 800 mấy</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 18:26:08 GMT+0700 (Giờ Đông Dương)">ông nói chuyển rồi thì chụp cái giao dịch lại cho tui coi coi</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 18:26:37 GMT+0700 (Giờ Đông Dương)">làm ăn mà ko chắc chắn v là ko thích rồi á</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 18:27:17 GMT+0700 (Giờ Đông Dương)">hôm qua phải chạy cuống đi mượn thêm tiền</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:27:40 GMT+0700 (Giờ Đông Dương)">Bên kia chưa chuyển 1 đồng, tui phải đi cầm lap để chia cho mđ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 18:43:07 GMT+0700 (Giờ Đông Dương)">ê sao im re v</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:43:39 GMT+0700 (Giờ Đông Dương)">Chụp cái gì ?</span>
+				</div><div class="message__item message__item--user">
+							<a href="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-0/p480x480/51236128_370744210406802_1176154687812927488_n.png?_nc_cat=106&_nc_oc=AQnS77ghpsnLk4eS6gwik5N38InTClnjdj67dZuhbUk63uiAoisdNty48n-OtjYTOtg&_nc_ht=scontent.fdad1-1.fna&oh=e83de575bbaa069eb9d996db3a4e383b&oe=5D008D90" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-0/p480x480/51236128_370744210406802_1176154687812927488_n.png?_nc_cat=106&_nc_oc=AQnS77ghpsnLk4eS6gwik5N38InTClnjdj67dZuhbUk63uiAoisdNty48n-OtjYTOtg&_nc_ht=scontent.fdad1-1.fna&oh=e83de575bbaa069eb9d996db3a4e383b&oe=5D008D90" alt="" title="Wed Jan 23 2019 18:44:03 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Wed Jan 23 2019 18:44:58 GMT+0700 (Giờ Đông Dương)">Số dư khả dụng còn 85k đấy, còn số dư thực tế còn 77tr do ck rồi nhưng chưa thực hiện gd đc thì nó chưa trừ. Trong sao kê ko có thông tin</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 19:07:34 GMT+0700 (Giờ Đông Dương)">ê</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Wed Jan 23 2019 19:07:39 GMT+0700 (Giờ Đông Dương)">ông đùa à</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Wed Jan 23 2019 19:07:41 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 07:26:21 GMT+0700 (Giờ Đông Dương)">Sao giờ vẫn chưa nhận đc</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 08:33:07 GMT+0700 (Giờ Đông Dương)">Ê</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 08:33:24 GMT+0700 (Giờ Đông Dương)">Sao tiền vẫn chưa qua</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 08:38:55 GMT+0700 (Giờ Đông Dương)">Ê</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 08:39:08 GMT+0700 (Giờ Đông Dương)">Rep đi chớ ông</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Thu Jan 24 2019 10:58:56 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 10:58:59 GMT+0700 (Giờ Đông Dương)">Qua chưa</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 10:59:18 GMT+0700 (Giờ Đông Dương)">Như v là hết r đúng k</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 10:59:33 GMT+0700 (Giờ Đông Dương)">Ông gửi bn mà hết</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 10:59:41 GMT+0700 (Giờ Đông Dương)">Tui chưa nhận đc tn</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 11:04:43 GMT+0700 (Giờ Đông Dương)">800</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 11:05:10 GMT+0700 (Giờ Đông Dương)">50k tiền lấy thẻ nữa chúe</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 11:05:26 GMT+0700 (Giờ Đông Dương)">50k tiền đi lấy thẻ nữa chứ</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 11:05:44 GMT+0700 (Giờ Đông Dương)">Ông chụp giao dịch lại coi tui chưa nhận đc tn</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50522195_359552758199740_4580353188326014976_n.png?_nc_cat=108&_nc_oc=AQk-i5Q4XDdADCag75PVKs7MYLrV8MAgw-_DhRhfJI_oQXHl00St4vwTEO4XsLEy_dQ&_nc_ht=scontent.fdad2-1.fna&oh=06b4b887dae7c01a9bff3ed5ef9452cb&oe=5CFEABE0" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50522195_359552758199740_4580353188326014976_n.png?_nc_cat=108&_nc_oc=AQk-i5Q4XDdADCag75PVKs7MYLrV8MAgw-_DhRhfJI_oQXHl00St4vwTEO4XsLEy_dQ&_nc_ht=scontent.fdad2-1.fna&oh=06b4b887dae7c01a9bff3ed5ef9452cb&oe=5CFEABE0" alt="" title="Thu Jan 24 2019 11:06:51 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 11:07:20 GMT+0700 (Giờ Đông Dương)">50k tui đi lấy thẻ nữa chi</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 11:07:32 GMT+0700 (Giờ Đông Dương)">Dạ</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 11:07:34 GMT+0700 (Giờ Đông Dương)">Con quên</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 11:08:06 GMT+0700 (Giờ Đông Dương)">Gửi qua luôn tui nộp lãi luôn cho khỏe</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50673356_319325642037449_4669100947966787584_n.png?_nc_cat=108&_nc_oc=AQk3E1g-yO8hEROCzGEuPbBLhYSVZWWSuBoa4k6irKUCdpfGuz1zSeYh0tpkW6e74K0&_nc_ht=scontent.fdad2-1.fna&oh=7daaa5f1c3aa2e45317b9bbb195cc9f2&oe=5CEA2A57" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50673356_319325642037449_4669100947966787584_n.png?_nc_cat=108&_nc_oc=AQk3E1g-yO8hEROCzGEuPbBLhYSVZWWSuBoa4k6irKUCdpfGuz1zSeYh0tpkW6e74K0&_nc_ht=scontent.fdad2-1.fna&oh=7daaa5f1c3aa2e45317b9bbb195cc9f2&oe=5CEA2A57" alt="" title="Thu Jan 24 2019 11:08:09 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 11:08:15 GMT+0700 (Giờ Đông Dương)">Ok</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 11:08:25 GMT+0700 (Giờ Đông Dương)">Hoàn thành giao dịch</span>
+				</div></div><div class="message__list">
+							<div class="message__item message__item--user">
+							<a href="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" target="_blank">
+							<img class="sticker" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.1997-6/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1&_nc_oc=AQnht7NaYnT21y4f-ua85jozmn2_c4y7e-D7HObhDhu4Y1l3FagxAA2p8avsLkbV7-U&_nc_ht=scontent.fdad2-1.fna&oh=af2b1ab978ad666db1f7d21fe2f365e3&oe=5CB76075" alt="" title="Thu Jan 24 2019 11:08:27 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 14:09:30 GMT+0700 (Giờ Đông Dương)">Eh</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 14:09:35 GMT+0700 (Giờ Đông Dương)">Tui gửi ông 1tr</span>
+				</div><div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 14:09:43 GMT+0700 (Giờ Đông Dương)">Ông đem qua thg Kiên dùm tui hỉ</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 14:09:52 GMT+0700 (Giờ Đông Dương)">ừm gửi qua</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 14:10:52 GMT+0700 (Giờ Đông Dương)">https://app.timo.vn/cxpassets/frontend/receipts/8809f5ef72fb9b80908db274e7a5d317cee46b970264d6a4161b87a766b2099b.pdf</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 14:11:06 GMT+0700 (Giờ Đông Dương)">gì v</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Thu Jan 24 2019 14:11:14 GMT+0700 (Giờ Đông Dương)">Hóa đơn</span>
+				</div><div class="message__item message__item--user">
+							<a href="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50808994_811966755820907_3021056244837253120_n.png?_nc_cat=104&_nc_oc=AQm_KBZFJB3wNxOybaBBLak2_19tD35RCwgBuyk4aDSS2m4_MSGff-L3GS2OKr9pfto&_nc_ht=scontent.fdad1-1.fna&oh=8ef409fa675a40ff3d5c264ae255b685&oe=5CB72DE6" target="_blank">
+							<img class="nonsticker" src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-0/p480x480/50808994_811966755820907_3021056244837253120_n.png?_nc_cat=104&_nc_oc=AQm_KBZFJB3wNxOybaBBLak2_19tD35RCwgBuyk4aDSS2m4_MSGff-L3GS2OKr9pfto&_nc_ht=scontent.fdad1-1.fna&oh=8ef409fa675a40ff3d5c264ae255b685&oe=5CB72DE6" alt="" title="Thu Jan 24 2019 14:11:23 GMT+0700 (Giờ Đông Dương)">
+							</a>
+							</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Thu Jan 24 2019 14:13:53 GMT+0700 (Giờ Đông Dương)">ok</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Sun Jan 27 2019 22:44:39 GMT+0700 (Giờ Đông Dương)">Ê</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Sun Jan 27 2019 22:44:56 GMT+0700 (Giờ Đông Dương)">sao v</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Sun Jan 27 2019 22:46:04 GMT+0700 (Giờ Đông Dương)">Ông gth mỗi thg Kiên mà pk?</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Sun Jan 27 2019 22:46:20 GMT+0700 (Giờ Đông Dương)">ừm</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Sun Jan 27 2019 22:46:34 GMT+0700 (Giờ Đông Dương)">T gửi nhầm ông 800 cmnr</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Sun Jan 27 2019 22:46:38 GMT+0700 (Giờ Đông Dương)">đâu</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Sun Jan 27 2019 22:46:47 GMT+0700 (Giờ Đông Dương)">ông gửi cho thằng bảo luon mà</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Sun Jan 27 2019 22:47:09 GMT+0700 (Giờ Đông Dương)">Ý là ông đưa thg Bảo 400 r à</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Sun Jan 27 2019 22:47:16 GMT+0700 (Giờ Đông Dương)">ừm đưa nó r</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Sun Jan 27 2019 22:48:01 GMT+0700 (Giờ Đông Dương)">Vãi nồi</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Sun Jan 27 2019 22:48:17 GMT+0700 (Giờ Đông Dương)">sao v</span>
+				</div><div class="message__item message__item--bot">
+				<span class="message message--bot" title="Sun Jan 27 2019 22:48:24 GMT+0700 (Giờ Đông Dương)">chớ hôm bữa nói r mà</span>
+				</div></div><div class="message__list">
+				<div class="message__item message__item--user">
+				<span class="message message--user" title="Sun Jan 27 2019 22:48:29 GMT+0700 (Giờ Đông Dương)">Thôi để t</span>
+				</div></div><div class="message__list">
+				<img class="bot__image" src="https://graph.facebook.com/100009833265604/picture">
+				<div class="message__item message__item--bot">
+				<span class="message message--bot" title="Sun Jan 27 2019 22:48:38 GMT+0700 (Giờ Đông Dương)">ừm</span>
+				</div>
+		</div>
+	</div>
+	</body>
+	</html>
